@@ -12,7 +12,8 @@ RUN yum install -y \
   python-pip \
   scipy \
   python-setuptools \
-  unzip
+  unzip \
+  && yum clean all
 
 RUN easy_install pip \
   && pip install flatdict python-dateutil pandas scikit-learn
